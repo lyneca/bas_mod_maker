@@ -120,7 +120,7 @@ if __name__ == "__main__":
     with open(sys.argv[1]) as f:
         data = yaml.load(f, Loader=yaml.FullLoader)
         things = [
-            Spell(data)
+            Spell(x) for x in data
         ]
         renderer = Renderer(sys.argv[2], env)
         renderer.make_dir()
