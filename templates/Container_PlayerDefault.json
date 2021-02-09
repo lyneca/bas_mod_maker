@@ -1,0 +1,9 @@
+{
+  "$type": "ThunderRoad.ContainerData, Assembly-CSharp",
+  "id": "PlayerDefault",
+  "saveFolder": "Bas",
+  "version": 1,
+  "displayName": "",
+  "description": null,
+  "contents": {{ contents }}
+}

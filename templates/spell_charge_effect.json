@@ -1,0 +1,570 @@
+{
+    "$type": "ThunderRoad.EffectData, Assembly-CSharp",
+    "id": "Spell{{ name }}Charge",
+    "saveFolder": "Bas",
+    "version": 0,
+    "groupId": "{{ name }}",
+    "volumeDb": 0.0,
+    "modules": [
+        {
+            "$type": "ThunderRoad.EffectModuleAudio, Assembly-CSharp",
+            "effectLink": "Intensity",
+            "audioContainerAddress": "{{ charge_start_sound_address }}",
+            "loopFadeDelay": 0.0,
+            "audioMixer": "Effect",
+            "volumeDb": 0.0,
+            "volumeCurve": {
+                "keys": [
+                    {
+                        "time": 0.0,
+                        "value": 0.2,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.333333343,
+                        "weightedMode": "None",
+                        "tangentMode": 34
+                    },
+                    {
+                        "time": 1.0,
+                        "value": 0.2,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.333333343,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 34
+                    }
+                ],
+                "length": 2,
+                "preWrapMode": "ClampForever",
+                "postWrapMode": "ClampForever"
+            },
+            "spatialBlend": 1.0,
+            "playDelay": 0.0,
+            "randomPlay": false,
+            "randomMinTime": 2.0,
+            "randomMaxTime": 5.0,
+            "randomPitch": true,
+            "pitchEffectLink": "Intensity",
+            "pitchCurve": {
+                "keys": [
+                    {
+                        "time": 0.0,
+                        "value": 0.9,
+                        "inTangent": 0.200000048,
+                        "outTangent": 0.200000048,
+                        "inWeight": 0.0,
+                        "outWeight": 0.333333343,
+                        "weightedMode": "None",
+                        "tangentMode": 34
+                    },
+                    {
+                        "time": 1.0,
+                        "value": 1.1,
+                        "inTangent": 0.200000048,
+                        "outTangent": 0.200000048,
+                        "inWeight": 0.333333343,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 34
+                    }
+                ],
+                "length": 2,
+                "preWrapMode": "ClampForever",
+                "postWrapMode": "ClampForever"
+            },
+            "useLowPassFilter": true,
+            "lowPassCutoffFrequencyCurve": {
+                "keys": [
+                    {
+                        "time": 0.0,
+                        "value": 6000.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    },
+                    {
+                        "time": 1.0,
+                        "value": 6000.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    }
+                ],
+                "length": 2,
+                "preWrapMode": "ClampForever",
+                "postWrapMode": "ClampForever"
+            },
+            "lowPassResonanceQCurve": {
+                "keys": [
+                    {
+                        "time": 0.0,
+                        "value": 1.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    },
+                    {
+                        "time": 1.0,
+                        "value": 1.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    }
+                ],
+                "length": 2,
+                "preWrapMode": "ClampForever",
+                "postWrapMode": "ClampForever"
+            },
+            "useHighPassFilter": false,
+            "highPassCutoffFrequencyCurve": {
+                "keys": [
+                    {
+                        "time": 0.0,
+                        "value": 10.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    },
+                    {
+                        "time": 1.0,
+                        "value": 10.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    }
+                ],
+                "length": 2,
+                "preWrapMode": "ClampForever",
+                "postWrapMode": "ClampForever"
+            },
+            "highPassResonanceQCurve": {
+                "keys": [
+                    {
+                        "time": 0.0,
+                        "value": 1.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    },
+                    {
+                        "time": 1.0,
+                        "value": 1.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    }
+                ],
+                "length": 2,
+                "preWrapMode": "ClampForever",
+                "postWrapMode": "ClampForever"
+            },
+            "useReverbFilter": false,
+            "reverbDryLevelCurve": {
+                "keys": [
+                    {
+                        "time": 0.0,
+                        "value": 0.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    },
+                    {
+                        "time": 1.0,
+                        "value": 0.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    }
+                ],
+                "length": 2,
+                "preWrapMode": "ClampForever",
+                "postWrapMode": "ClampForever"
+            },
+            "minDistance": 1.0,
+            "maxDistance": 500.0,
+            "step": "Start",
+            "stepCustomId": null,
+            "plateformFilter": "Windows, Android",
+            "isGore": false,
+            "damagerStateFilter": "Inactive, Active",
+            "damageTypeFilter": "Energy, Blunt, Slash, Pierce",
+            "penetrationFilter": "None, Pressure, Hit",
+            "imbuesFilterLogic": "AnyExcept",
+            "imbuesFilter": [],
+            "colliderGroupFilterLogic": "AnyExcept",
+            "colliderGroupsFilter": [],
+            "damagersFilterLogic": "AnyExcept",
+            "damagersFilter": []
+        },
+        {
+            "$type": "ThunderRoad.EffectModuleAudio, Assembly-CSharp",
+            "effectLink": "Intensity",
+            "audioContainerAddress": "{{ charge_loop_sound_address }}",
+            "loopFadeDelay": 1.0,
+            "audioMixer": "Effect",
+            "volumeDb": 0.0,
+            "volumeCurve": {
+                "keys": [
+                    {
+                        "time": 0.0,
+                        "value": 0.1,
+                        "inTangent": 0.1002649,
+                        "outTangent": 0.1002649,
+                        "inWeight": 0.0,
+                        "outWeight": 0.333333343,
+                        "weightedMode": "None",
+                        "tangentMode": 34
+                    },
+                    {
+                        "time": 0.997358,
+                        "value": 0.2,
+                        "inTangent": 0.1002649,
+                        "outTangent": 0.1002649,
+                        "inWeight": 0.333333343,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 34
+                    }
+                ],
+                "length": 2,
+                "preWrapMode": "ClampForever",
+                "postWrapMode": "ClampForever"
+            },
+            "spatialBlend": 1.0,
+            "playDelay": 0.0,
+            "randomPlay": false,
+            "randomMinTime": 2.0,
+            "randomMaxTime": 5.0,
+            "randomPitch": false,
+            "pitchEffectLink": "Intensity",
+            "pitchCurve": {
+                "keys": [
+                    {
+                        "time": 0.0,
+                        "value": 0.9,
+                        "inTangent": 0.101812407,
+                        "outTangent": 0.101812407,
+                        "inWeight": 0.0,
+                        "outWeight": 0.333333343,
+                        "weightedMode": "None",
+                        "tangentMode": 34
+                    },
+                    {
+                        "time": 0.841216445,
+                        "value": 0.985646248,
+                        "inTangent": 0.410999477,
+                        "outTangent": 0.410999477,
+                        "inWeight": 0.333333343,
+                        "outWeight": 0.333333343,
+                        "weightedMode": "None",
+                        "tangentMode": 34
+                    },
+                    {
+                        "time": 1.0,
+                        "value": 1.1,
+                        "inTangent": 0.720186532,
+                        "outTangent": 0.720186532,
+                        "inWeight": 0.333333343,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 34
+                    }
+                ],
+                "length": 3,
+                "preWrapMode": "ClampForever",
+                "postWrapMode": "ClampForever"
+            },
+            "useLowPassFilter": true,
+            "lowPassCutoffFrequencyCurve": {
+                "keys": [
+                    {
+                        "time": 0.0,
+                        "value": 5000.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    },
+                    {
+                        "time": 1.0,
+                        "value": 20000.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    }
+                ],
+                "length": 2,
+                "preWrapMode": "ClampForever",
+                "postWrapMode": "ClampForever"
+            },
+            "lowPassResonanceQCurve": {
+                "keys": [
+                    {
+                        "time": 0.0,
+                        "value": 1.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    },
+                    {
+                        "time": 1.0,
+                        "value": 1.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    }
+                ],
+                "length": 2,
+                "preWrapMode": "ClampForever",
+                "postWrapMode": "ClampForever"
+            },
+            "useHighPassFilter": false,
+            "highPassCutoffFrequencyCurve": {
+                "keys": [
+                    {
+                        "time": 0.0,
+                        "value": 250.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    },
+                    {
+                        "time": 1.0,
+                        "value": 250.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    }
+                ],
+                "length": 2,
+                "preWrapMode": "ClampForever",
+                "postWrapMode": "ClampForever"
+            },
+            "highPassResonanceQCurve": {
+                "keys": [
+                    {
+                        "time": 0.0,
+                        "value": 1.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    },
+                    {
+                        "time": 1.0,
+                        "value": 1.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    }
+                ],
+                "length": 2,
+                "preWrapMode": "ClampForever",
+                "postWrapMode": "ClampForever"
+            },
+            "useReverbFilter": false,
+            "reverbDryLevelCurve": {
+                "keys": [
+                    {
+                        "time": 0.0,
+                        "value": 0.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    },
+                    {
+                        "time": 1.0,
+                        "value": 0.0,
+                        "inTangent": 0.0,
+                        "outTangent": 0.0,
+                        "inWeight": 0.0,
+                        "outWeight": 0.0,
+                        "weightedMode": "None",
+                        "tangentMode": 0
+                    }
+                ],
+                "length": 2,
+                "preWrapMode": "ClampForever",
+                "postWrapMode": "ClampForever"
+            },
+            "minDistance": 1.0,
+            "maxDistance": 500.0,
+            "step": "Loop",
+            "stepCustomId": null,
+            "plateformFilter": "Windows, Android",
+            "isGore": false,
+            "damagerStateFilter": "Inactive, Active",
+            "damageTypeFilter": "Energy, Blunt, Slash, Pierce",
+            "penetrationFilter": "None, Pressure, Hit",
+            "imbuesFilterLogic": "AnyExcept",
+            "imbuesFilter": [],
+            "colliderGroupFilterLogic": "AnyExcept",
+            "colliderGroupsFilter": [],
+            "damagersFilterLogic": "AnyExcept",
+            "damagersFilter": []
+        }{% if vfx_address %},
+        {
+            "$type": "ThunderRoad.EffectModuleVfx, Assembly-CSharp",
+            "vfxAddress": "{{ vfx_address }}",
+            "intensityCurve": null,
+            "lifeTime": 5.0,
+            "useSecondaryRenderer": false,
+            "lookAtTarget": false,
+            "mainGradient": {
+                "colorKeys": [
+                    {
+                        "color": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "time": 0.0
+                    },
+                    {
+                        "color": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "time": 1.0
+                    }
+                ],
+                "alphaKeys": [
+                    {
+                        "alpha": 1.0,
+                        "time": 0.0
+                    },
+                    {
+                        "alpha": 1.0,
+                        "time": 1.0
+                    }
+                ],
+                "mode": "Blend"
+            },
+            "secondaryGradient": null,
+            "mainGradientNoHdr": {
+                "colorKeys": [
+                    {
+                        "color": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "time": 0.0
+                    },
+                    {
+                        "color": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0,
+                            "a": 1.0
+                        },
+                        "time": 1.0
+                    }
+                ],
+                "alphaKeys": [
+                    {
+                        "alpha": 1.0,
+                        "time": 0.0
+                    },
+                    {
+                        "alpha": 1.0,
+                        "time": 1.0
+                    }
+                ],
+                "mode": "Blend"
+            },
+            "secondaryGradientNoHdr": null,
+            "localScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "useScaleCurve": false,
+            "scaleCurve": null,
+            "usePointCache": false,
+            "pointCacheSkinnedMeshUpdate": false,
+            "pointCacheMapSize": 512,
+            "pointCachePointCount": 4096,
+            "pointCacheSeed": 0,
+            "pointCacheDistribution": "RandomUniformArea",
+            "pointCacheBakeMode": "Triangle",
+            "useMesh": false,
+            "meshAddress": null,
+            "materialProperties": [],
+            "step": "Loop",
+            "stepCustomId": null,
+            "plateformFilter": "Windows, Android",
+            "isGore": false,
+            "damagerStateFilter": "Inactive, Active",
+            "damageTypeFilter": "Energy, Blunt, Slash, Pierce",
+            "penetrationFilter": "None, Pressure, Hit",
+            "imbuesFilterLogic": "AnyExcept",
+            "imbuesFilter": [],
+            "colliderGroupFilterLogic": "AnyExcept",
+            "colliderGroupsFilter": [],
+            "damagersFilterLogic": "AnyExcept",
+            "damagersFilter": []
+        }{% endif %}
+    ]
+}

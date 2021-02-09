@@ -1,0 +1,64 @@
+# Spell name
+name: Test
+# C# Namespace
+namespace: TestSpell
+# C# output DLL name
+dll: Test
+# Spell orb settings
+orb:
+  # Mesh colors, idk which colors they map to
+  mesh_color_a:
+    r: 1
+    g: 2
+    b: 2
+  mesh_color_b:
+    r: 1
+    g: 1.5
+    b: 1.5
+  mesh_color_c:
+    r: 1
+    g: 2
+    b: 2
+  mesh_color_d:
+    r: 1
+    g: 2
+    b: 2
+  # Spell rune - `o_rune` is fire, `o_rune_1` is lightning, `o_rune_2` is gravity
+  rune: "o_rune_2"
+  # Sound that plays when spell is selected
+  select_sound_address: Lyneca.TestSpell.SpellOrbSelect
+  # Spell orb VFX address
+  vfx_address: Lyneca.TestSpell.OrbVFX
+# Charged spell settings
+charge:
+  # C# class name
+  class_name: SpellTestCharge
+  # whether throw is enabled
+  throw: true
+  # whether spray is enabled
+  spray: false
+  # whether imbue is enabled
+  imbue: true
+  # Spell effect
+  effect:
+    # Charge start sound address
+    charge_start_sound_address: Lyneca.TestSpell.TestChargeStart
+    # Charge loop sound address
+    charge_loop_sound_address: Lyneca.TestSpell.TestChargeStart
+    # Charge VFX
+    vfx_address: Lyneca.TestSpell.ChargeVFX
+# List of merges
+merges:
+  # Merge class name
+  - class_name: FireTestMerge
+    # Spells that trigger the merge
+    spell_a: Test
+    spell_b: Fire
+    # Merge effect settings
+    effect:
+      # Charge start sound address
+      charge_start_sound_address: Lyneca.TestSpell.TestFireChargeStart
+      # Charge loop sound address
+      charge_loop_sound_address: Lyneca.TestSpell.TestFireChargeLoop
+      # Charge VFX
+      vfx_address: Lyneca.TestSpell.FireMergeVFX
