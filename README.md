@@ -7,3 +7,5 @@ Create B&S Spell JSON files!
 ```
 python3 main.py [config file] [output folder name]
 ```
+
+Check [example_spell.yml](example_spell.yml) for supported fields.
